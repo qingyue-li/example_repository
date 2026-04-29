@@ -15,6 +15,8 @@ packages = c(
   "marginaleffects" # for marginal effects of models
 )
 
+#some changes
+
 package.check <- lapply(packages, FUN = function(x) {
   if (!require(x, character.only = TRUE)) {
     install.packages(x, dependencies = TRUE)
